@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;700&family=Poppins:wght@400;500;600&display=swap');
+
+
+* {
+    font-family: Poppins,sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.eslogan-text{
+    display: flex;
+    width: 100%;
+    color: #ffff;
+    background-color: #000;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 14px;
+    letter-spacing: 1px;
+    padding: 24px 60px;
+    word-wrap: break-word;
+
+}
+
+.navbar {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 60px;
+    height: 96px;
+    background-color: #ffff;
+    border-bottom: 1px;
+}
+
+.navbar #logo {
+    width: 160px;
+}
+
+.navbar-nav a{
+    padding-left: 0 !important;
+    text-align: center;
+}
+
+.navbar-nav a:hover {
+    border-bottom: 2px solid #000;
+}
+
+.img-background {
+    display: flex;
+    justify-content: center;
+    align-content: space-evenly;
+    z-index: 0;
+}
+.img-bg {
+    width: 25%; 
+    height: 840px; 
+    top: 0px; 
+    position: relative; 
+    filter: brightness(50%)
+}
+
+.login-box {
+    width: 425px;
+    height: 380px;
+    padding: 20px 40px;
+    background-color: #1c1c1c;
+    border-radius: 30px;
+    border: 2px solid #1c1c1c;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: absolute;
+    z-index: 1;
+    top: 400px;
+    left: 38%;
+    right: auto;
+
+}
+
+.login-title{
+    color: white;
+    font-size: 42px;
+    font-family: "Montserrat Alternates", serif;
+    font-weight: 700;
+    font-style: normal;
+    word-wrap: break-word;
+    text-align: center;
+    width: 346px;
+    height: 40px;
+}
+
+.login-title span{
+    font-family: "Montserrat Alternates", serif;
+    font-weight: 100;
+}
+
+.login-box input {
+    width: 346px;
+    height: 50px;
+    background-color: white;
+    border-radius: 8px;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.login-box button{
+    width: 346px;
+    height: 50px;
+    background-color: #000;
+    color: white;
+    border-radius: 8px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    margin: 10px;
+
+    &:hover {
+        background-color: #1c1c1c;
+    }
+}
+
+.footer {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+}
+
+.footer-info{
+    width: 470px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.footer ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.footer ul li{
+    padding: 10px;
+}
+
+.footer .redes-sociales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    margin-left: 150px;
+}
+
+.footer .redes-sociales i {
+    font-size: 20px;
+}
+
+.footer .copyrights{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    padding-left: 30px;
+}
