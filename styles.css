@@ -207,11 +207,7 @@
 }
 
 body {
-    background-color: var(--negro);
     overlay: var(--negro);
-    color: var(--blanco);
-    margin: 0;
-    font-family: serif;
 }
 
 
@@ -221,9 +217,12 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     gap: 40px;
-    max-width: 1600px;
     padding: 60px;
     margin: 0 auto;
+    background-color: var(--negro);
+    color: var(--blanco);
+    margin: 0;
+    font-family: serif;
 }
 
 
@@ -277,7 +276,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    max-width: 1200px;
+    background-color: var(--negro);
     margin: 0 auto;
     padding: 40px;
     color: var(--hueso);
