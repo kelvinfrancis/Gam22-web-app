@@ -321,3 +321,84 @@ body {
         max-width: 90%;
     }
 }
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+}
+
+#formulario {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--hueso);
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1001;
+}
+
+
+.btn-primary{
+    margin-top: 30px;
+}
+
+.bi-x-circle{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#filter{
+    text-align: center;
+}
+
+#filter input{
+    padding: 8px 16px;
+    margin: 10px;
+    margin-bottom: 65px;
+    width: 500px;
+    font-size: 18px;
+    border-radius: 60px;
+    border: 2px var(--hueso);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    width: 60%;
+    display:flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#genero-juegos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.game-card {
+    color: var(--hueso);
+    font-family: 'Value Serif Pro', Tahoma, Geneva, Verdana, sans-serif;
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--negro);
+    border-radius: 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(54, 54, 54);
+}
+
+.game-card img {
+    width: 100%;
+    border-radius: 10px;
+}
