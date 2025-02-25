@@ -29,5 +29,5 @@ GAM32 es una plataforma web para entusiastas de los videojuegos que buscan infor
 ## Enlaces
 
 *   Repositorio de GitHub: [https://github.com/kelvinfrancis/Gam22-web-app]
-*   Web App: ###
+*   Web App: [https://kelvinfrancis.github.io/Gam22-web-app/index.html]
 
