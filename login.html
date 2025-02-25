@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gam32 - Iniciar Sesión</title>
-    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
@@ -17,7 +17,7 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-lg">
           <a class="navbar-brand" href="#">
-            <img id="logo" src="../styles/GAM32.svg" alt="logo">
+            <img id="logo" src="./img/GAM32.svg" alt="logo">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -26,29 +26,25 @@
             <div class="navbar-nav">
               <a class="nav-link" href="#">Inicio</a>
               <a class="nav-link" href="#"><i class="bi bi-search"></i> Búsqueda</a>
-              <a class="nav-link" href="/pages/login.html"><i class="bi bi-person-circle"></i> Iniciar Sesión</a>
+              <a class="nav-link" href="login.html"><i class="bi bi-person-circle"></i> Iniciar Sesión</a>
               <button class=" btn btn-dark" href="#">Contáctenos</button>
             </div>
           </div>
         </div>
     </nav>
 
-    <main>
-        <!--BACKGROUND  DE IMG-->
-        <div class="img-background">
-            <img class="img-bg" src="/img/Eldenring.webp"/>
-            <img class="img-bg" src="/img/bloodborne.webp" />
-            <img class="img-bg" src="/img/God.webp" />
-            <img class="img-bg" src="/img/Ghost.webp" />
-        </div>
-
+    <main class="contenido">
         <!--FORMULARIO DE ACCESO-->
         <div class="login-box">
             <div class="login-title">GAM<span>32</span></div>
-            <form action="">
-                <input class="login-input" type="text" name="usuario" placeholder="Usuario">
-                <input class="login-input" type="password" name="clave" placeholder="Contraseña">
-                <button type="submit">Acceder</button>
+            <form class="login-form" id="login-form">
+                <input class="login-input" required type="text" name="usuario" id="usuario" placeholder="Usuario">
+
+                <input class="login-input" required type="password" name="clave" id="clave" placeholder="Contraseña">
+
+                <button type="submit" id="login-btn">Acceder</button>
+
+                <a id="registrar" href="registrar.html">Regístrate</a>
             </form>
         </div>
     </main>
@@ -78,6 +74,38 @@
     
     <!--BOOTSTRAP JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 
+    <script>
+        // VALIDAR DATOS DE LOGIN
+        const loginBtn = document.getElementById('login-btn')
+        const loginForm = document.getElementById('login-form')
+
+        loginBtn.onclick = (event) => {
+            event.preventDefault();
+            const usuarioInput = document.getElementById('usuario').value;
+            const claveInput = document.getElementById('clave').value;
+
+            const usuario = sessionStorage.getItem('usuario')
+
+            if(usuario){
+                const parsedUsuario = JSON.parse(usuario)
+                if(parsedUsuario.usuario === usuarioInput){
+                    if(parsedUsuario.clave === claveInput){
+                        alert("Inicio de sesión Satisfactorio")
+                        // poner pagina de inicio
+                        loginForm.reset()
+                        window.location.href = '#'
+                        
+                    } else {
+                        alert('Clave incorrecta')
+                    }
+                } else {
+                    alert('Usuario incorrecto.')
+                }
+            }
+        };
+    </script>
 </body>
 </html>

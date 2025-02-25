@@ -55,32 +55,26 @@
     align-content: space-evenly;
     z-index: 0;
 }
-.img-bg {
-    width: 25%; 
-    height: 840px; 
-    top: 0px; 
-    position: relative; 
-    filter: brightness(50%)
+.contenido {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/img/games-bg.jpg");
 }
 
 .login-box {
     width: 425px;
-    height: 380px;
-    padding: 20px 40px;
+    height: 470px;
+    padding: 20px 30px;
     background-color: #1c1c1c;
     border-radius: 30px;
     border: 2px solid #1c1c1c;
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-    position: absolute;
-    z-index: 1;
-    top: 400px;
-    left: 38%;
-    right: auto;
-
 }
 
 .login-title{
@@ -92,7 +86,6 @@
     word-wrap: break-word;
     text-align: center;
     width: 346px;
-    height: 40px;
 }
 
 .login-title span{
@@ -113,13 +106,13 @@
     margin: 10px;
 }
 
-.login-box button{
+.login-box button[type="submit"]{
     width: 346px;
     height: 50px;
     background-color: #000;
     color: white;
     border-radius: 8px;
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -131,11 +124,27 @@
     }
 }
 
+.login-box #registrar{
+    display: flex;
+    justify-content: center;
+    width: 346px;
+    height: 45px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: whitesmoke;
+
+    &:hover{
+        font-weight: bold;
+        font-size: 18px;
+        transition: all 0.5s ease-out;
+    }
+}
+
 .footer {
     height: 300px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     background-color: white;
 
 }
