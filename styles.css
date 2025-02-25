@@ -43,6 +43,7 @@
 .navbar-nav a{
     padding-left: 0 !important;
     text-align: center;
+    border-bottom: 2px solid #ffff;
 }
 
 .navbar-nav a:hover {
