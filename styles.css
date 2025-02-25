@@ -354,18 +354,23 @@ body {
 }
 
 #filter{
+    padding-top: 40px;
     text-align: center;
+    background-color: var(--negro);
 }
 
 #filter input{
-    padding: 8px 16px;
+    padding: 8px 30px;
     margin: 10px;
     margin-bottom: 65px;
     width: 500px;
     font-size: 18px;
     border-radius: 60px;
     border: 2px var(--hueso);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(54, 54, 54);
+    font-family: Poppins,sans-serif;
 }
 
 .container{
@@ -373,6 +378,7 @@ body {
     display:flex;
     justify-content: center;
     margin: 0 auto;
+    background-color: var(--negro);
 }
 
 #genero-juegos{
