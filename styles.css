@@ -274,6 +274,7 @@ body {
 .features {
     display: flex;
     flex-wrap: wrap;
+    align-items: start;
     justify-content: center;
     background-color: var(--negro);
     gap: 20px;
@@ -285,21 +286,16 @@ body {
 
 .feature {
     display: flex;
-    align-items: center;
-    gap: 15px;
+    gap: 20px;
     padding: 20px;
     border-radius: 10px;
     width: 100%;
-    max-width: 350px;
-    max-height: 200px;
-    background-color: #1c1c1c;
-    padding: 2px;
+    max-width: 400px;
 }
 
 .feature img {
     width: 50px;
     height: auto;
-    padding-left: 5px;
 }
 
 .text {
