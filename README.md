@@ -16,6 +16,7 @@ GAM32 es una plataforma web para entusiastas de los videojuegos que buscan infor
 *   HTML
 *   CSS
 *   JavaScript
+*   API utilizada: [https://rawg.io/apidocs]
 
 ## Cómo usar
 
