@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;700&family=Poppins:wght@400;500;600&display=swap');
 
+:root{
+    --negro: #131313;
+    --hueso: #FFFEFA;
+}
 
 * {
     font-family: Poppins,sans-serif;
