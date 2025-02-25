@@ -7,7 +7,7 @@ GAM32 es una plataforma web para entusiastas de los videojuegos que buscan infor
 ## Créditos
 
 ###   Diseño y desarrollo: 
-*   Kelvin Francisco Moquete
+*   Kelvin Francisco Moquete Peña
 *   Edinson Julián Figueroa Niño
 
 
