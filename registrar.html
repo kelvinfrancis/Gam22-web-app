@@ -38,8 +38,6 @@
         <div class="login-box">
             <div class="login-title">GAM<span>32</span></div>
             <form class="register-login-form" id="register-form">
-                <input class="login-input" required type="text" name="nombre" id="nombre" placeholder="Nombre">
-
                 <input class="login-input" required type="text" name="usuario" id="usuario" placeholder="Usuario">
 
                 <input class="login-input" required type="password" name="clave" id="clave" placeholder="Contraseña">
@@ -87,7 +85,6 @@
         registerBtn.onclick = (event) => {
             event.preventDefault();
             // Obtener valores
-            const nombreRegistrado = document.getElementById("nombre").value;
             const user = document.getElementById("usuario").value;
             const passW = document.getElementById("clave").value;
             const confirmarPass = document.getElementById("confirmarClave").value;
@@ -98,7 +95,6 @@
             }
         
             const usuarioObj = {
-                nombre: nombreRegistrado,
                 usuario: user,
                 clave: passW,
             };
